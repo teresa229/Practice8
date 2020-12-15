@@ -12,6 +12,18 @@ public class Point {
 
 	//equals() 메소드를 작성하세요.
 	public boolean equals(Object obj) {
+		Point p = (Point)obj;
+		if(this.x == p.x){
+			return true;
+		}else {
+			return false;
+		}
+	}
+}
+	
+	
+/*	
+	public boolean equals(Object obj) {
 		if(this.hashCode() == ((Point)obj).hashCode()) {
 			return true;
 		}else {
@@ -30,5 +42,6 @@ public class Point {
 			}
 		}
 	}
+*/	
 	
 }
